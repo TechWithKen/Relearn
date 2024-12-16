@@ -13,13 +13,54 @@ class MyCardApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blue,
         body: SafeArea(
-          child: Container(
-              height: 90.0,
-              width: 300.0,
-              margin: EdgeInsets.all(10.0),
-              padding: EdgeInsets.all(30.0),
-              child: Text("This is a card app"),
-              color: Colors.grey),
+          child: Row(
+            children: [
+              Column(
+                children: [
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.white,
+                    child: Center(child: Text("White Colour")),
+                  ),
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.red,
+                    child: Center(child: Text("Red Color")),
+                  ),
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.yellow,
+                    child: Center(child: Text("Yellow Color")),
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.white,
+                    child: Center(child: Text("White Colour")),
+                  ),
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.red,
+                    child: Center(child: Text("Red Color")),
+                  ),
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.yellow,
+                    child: Center(child: Text("Yellow Color")),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
