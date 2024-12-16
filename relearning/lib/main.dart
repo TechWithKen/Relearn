@@ -11,56 +11,25 @@ class MyCardApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            children: [
-              Column(
-                children: [
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.white,
-                    child: Center(child: Text("White Colour")),
-                  ),
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.red,
-                    child: Center(child: Text("Red Color")),
-                  ),
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.yellow,
-                    child: Center(child: Text("Yellow Color")),
-                  ),
-                ],
-              ),
-              Column(
-                children: [
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.white,
-                    child: Center(child: Text("White Colour")),
-                  ),
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.red,
-                    child: Center(child: Text("Red Color")),
-                  ),
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.yellow,
-                    child: Center(child: Text("Yellow Color")),
-                  ),
-                ],
-              ),
-            ],
-          ),
+          child: Row(children: [
+            Container(width: 100.0, color: Colors.red),
+            SizedBox(
+              width: 30.0,
+            ),
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(width: 100.0, height: 100.0, color: Colors.yellow),
+                Container(width: 100.0, height: 100.0, color: Colors.green),
+              ],
+            ),
+            SizedBox(
+              width: 30.0,
+            ),
+            Container(width: 100.0, color: Colors.blue),
+          ]),
         ),
       ),
     );
