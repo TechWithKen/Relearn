@@ -15,7 +15,7 @@ class MyCardApp extends StatelessWidget {
         body: SafeArea(
           child: Container(
               height: 100.0,
-              width: 200.0,
+              width: 300.0,
               margin: EdgeInsets.all(10.0),
               padding: EdgeInsets.all(30.0),
               child: Text("This is a card app"),
